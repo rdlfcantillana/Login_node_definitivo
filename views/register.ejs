@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Register!</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/informationStyle2.css">
+
+</head>
+<body>
+  <section class='login' id='login'>
+    <div class='head'>
+    <h1 class='company'><a href="/index" class="loguito">Registro de Usuarios</a> </h1>
+    </div>
+    <p class='msg'>Bienvenido!</p>
+    <% if(typeof errors != 'undefined') { %>
+      <h4>Error de Inicio de Sesion</h4>
+    <% } %>
+    <ul>
+      <% if(typeof errors != 'undefined') { %> <% errors.forEach(error=>{ %>
+      <li><%= error.message %></li>
+      <% }) %> <% } %>
+    </ul>
+    <div class='form'>
+      <form method="post" action="/register">
+        <div>
+          <input type="text" autocomplete="off" placeholder='Correo electrónico' class='text' id='email' name="email" required><br><br>
+        </div>
+        <div>
+          <input type="text" autocomplete="off" placeholder='Nombre de Usuario' class='text' id='username' name="username" required><br>
+        </div>
+        <div>
+          <input type="password" placeholder='Contraseña' class='password' id="password" name="password" required>
+        </div>
+        <div>
+          <input type="password" placeholder='Confirmar Contraseña' class='password' id="password2" name="password2" required>
+        </div>
+        <div>
+          <button type="submit" class='btn-login'>Registrarte</button>
+        </div>
+        <a href="login" class='crear'>Iniciar Sesión</a>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

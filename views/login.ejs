@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> The Login!</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/informationStyle.css">
+</head>
+<body>
+
+  <section class='login' id='login'>
+    <div class='head'>
+    <h1 class='company'><a href="/index" class="loguito">Login de Usuarios</a></h1>
+    </div>
+    <p class='msg'>Bienvenido de Nuevo!</p>
+    <% if(typeof mensaje != 'undefined') { %>
+      <h4>Mensaje de Creacion</h4>
+    <% } %>
+    <ul>
+      <% if(typeof mensaje != 'undefined') { %> 
+      <li>Cuenta Creada con Exito</li>
+      <% } %>
+    </ul>
+    <% if(typeof errors != 'undefined') { %>
+      <h4>Error de Inicio de Sesion</h4>
+    <% } %>
+    <ul>
+      <% if(typeof errors != 'undefined') { %> <% errors.forEach(error=>{ %>
+      <li><%= error.message %></li>
+      <% }) %> <% } %>
+    </ul>
+    <div class='form'>
+      <form action="/login" method="POST" >
+        <form action="/login-admin" method="POST" >
+        <div>
+          <input type="text" autocomplete="off" placeholder='Nombre de Usuario' class='text' id='username' name="username" required><br>
+        </div>
+        <div>
+          <input type="password" placeholder='Contraseña' class='password' id="password" name="password" required><br>
+        </div>
+        <div>
+          <input type="submit" class="btn-login" value="Iniciar Sesión">
+        </div>
+        <a href="register" class='crear'>Crear Cuenta</a><br>
+
+        <a href="/forgot-password" class='crear'>olvido su contrasena?</a>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

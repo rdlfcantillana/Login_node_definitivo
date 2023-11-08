@@ -1,0 +1,176 @@
+body{
+  background: 
+  linear-gradient(90deg, #7a0000, #a50000);
+}
+
+.navBar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  border-bottom: 1px solid white;
+}
+
+
+
+.loguito{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  flex-grow: 0.8;
+  font-size: 267%;
+  color: white;
+  padding-left: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+
+
+.textito{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 267%;
+  color: white;
+  padding: 0 60px;
+}
+
+.textito-S{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 120%;
+  color: white;
+  padding: 0 60px;
+}
+
+.ovalo{
+  border: 2px solid #FFF;
+  padding: 12px 50px;
+  border-radius: 15px;
+  /* background: -webkit-linear-gradient(90deg, #1176b9, #197abb); */
+  background-color: #af0909;
+  transition: 0.5s
+}
+
+.href{
+  color: #FFF;
+  text-decoration: none;
+}
+
+.href:visited{
+  color: #FFF
+}
+
+.href:hover{
+  color: #af0909;
+  background-color: #FFF;
+
+}
+
+.principal{
+  display: flex;
+  border: 2px solid #FFF;
+  padding: 5px 10px;
+  margin: 2% 22%;
+}
+
+.izquierdo{
+  display: flex;
+  align-items: center;
+  /* border: 2px solid #FFF; */
+  border-right: 2px solid #FFF;
+}
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+}
+.campos{
+  margin-left: 10px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* border: 2px solid #FFF; */
+  width: 100%;
+  /* justify-self: flex-end; */
+  padding: 0 5px;
+}
+
+.r{
+  resize: none;
+}
+
+.boton-S{
+  display: flex;
+  justify-content: center;
+}
+
+.cuadroLindo{
+  border: 2px solid #FFF;
+  border-radius: 15px;
+  padding: 15px 15px;
+  /* background: linear-gradient(to right, #e7c70f, #cf1a1a); */
+  background-color: #af0909;
+  transition: 0.5s;
+  font-size: 120%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0px;
+}
+
+#sutoppu{
+  font-size: 50%;
+}
+
+.pointer{
+  cursor: pointer;
+  user-select: none;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.itemFlex{
+  flex-grow: 0.9;
+}
+
+.inputFlex{ 
+  height: 8VH;
+}
+
+.chat{
+  height:100px;
+  width:610px;
+  overflow:auto;
+  border:2px solid wheat;
+  padding:2%;
+  margin-left: 258px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 120%;
+  color: white;
+}
+
+.chatSend{
+  height:5px;
+  width:550px;
+  overflow-x:scroll;
+  border:2px solid wheat;
+  padding:5px;
+  margin-left: 258px;
+}
+
+.botonChat{
+  height:5px;
+  width:100px;
+  /* overflow-x:scroll; */
+  border:2px solid wheat;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 120%;
+  color: white;
+  /* padding:5px; */
+  /* margin-left: 258px; */
+}
+
+.chat p{
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
